@@ -1,0 +1,61 @@
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: navy;
+    color: lightgray;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: darkblue;      
+    text-align: center;      
+    margin: 20px 0;    
+}
+
+p {
+    padding: 0;               
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid darkblue;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+}
