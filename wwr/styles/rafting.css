@@ -60,7 +60,7 @@ nav a {
     border-radius: 5px;
 }
 
-.float-right {
+.hero article img.float-right {
     float: right;
     margin-left: 10px;
     width: 100px;
