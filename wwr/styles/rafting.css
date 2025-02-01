@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #8694D9; /* Vista Blue */
-    --secondary-color: #5F4BB6; /* Iris */
-    --text-color: #202A25; /* Gunmetal */
+    --primary-color: #eba50ecc;
+    --secondary-color: #91d3c5dc;
+    --text-color: #202A25;
     --accent-color: #c4ebc8;
 }
 
@@ -31,10 +31,8 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
 nav ul li a {
@@ -44,23 +42,34 @@ nav ul li a {
 }
 
 .hero {
-    text-align: center;
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+    .hero {
+        text-align: center;
+        position: relative;
+        background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                    url("images/designer_portfolio_website_tubik.jpg");
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero img {
+        display: none; /* Hide the original image, as it's now part of the background */
+    }
+    
+    .hero h1 {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    
 }
 
 .history {
@@ -71,18 +80,22 @@ nav ul li a {
 }
 
 .adventures {
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
 }
 
-.adventures figure {
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.adventure-gallery figure {
     text-align: center;
     margin: 0;
 }
 
-.adventures img {
-    width: 150px;
+.adventure-gallery img {
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -97,9 +110,10 @@ footer {
 
 footer .social-icons {
     display: flex;
+    gap: 10px;
 }
 
 footer .social-icons a img {
     width: 30px;
-    margin: 0 5px;
 }
+
