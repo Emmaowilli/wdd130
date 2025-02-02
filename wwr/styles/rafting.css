@@ -58,7 +58,7 @@ nav ul li a {
     }
     
     .hero img {
-        display: none; /* Hide the original image, as it's now part of the background */
+        display: none; 
     }
     
     .hero h1 {
