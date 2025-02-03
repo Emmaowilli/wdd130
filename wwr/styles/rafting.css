@@ -37,7 +37,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -46,7 +46,7 @@ nav ul li a {
         text-align: center;
         position: relative;
         background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
-                    url("images/designer_portfolio_website_tubik.jpg");
+                    url("images/super-hero-kid-mask-flying-red-blue-dress-ocean-54422686.jpg");
         background-size: cover;
         background-position: center;
         background-blend-mode: overlay;
