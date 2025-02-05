@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #eba50ecc;
-    --secondary-color: #91d3c5dc;
+    --primary-color: #5d83e4e8;
+    --secondary-color: #ecf2f3;
     --text-color: #202A25;
-    --accent-color: #c4ebc8;
+    --accent-color: #22e6749d;
 }
 
 body {
@@ -46,7 +46,7 @@ nav ul li a {
         text-align: center;
         position: relative;
         background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
-                    url("images/super-hero-kid-mask-flying-red-blue-dress-ocean-54422686.jpg");
+                    url("images/rafting56_600.jpg");
         background-size: cover;
         background-position: center;
         background-blend-mode: overlay;
