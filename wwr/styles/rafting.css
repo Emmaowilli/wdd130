@@ -1,119 +1,40 @@
-:root {
-    --primary-color: #5d83e4e8;
-    --secondary-color: #ecf2f3;
-    --text-color: #202A25;
-    --accent-color: #22e6749d;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-}
-
-header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: white;
-}
-
-header img.logo {
-    width: 80px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: flex-end;
-    gap: 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+    background: linear-gradient(to bottom, #b3e0ff, #c3d4e0, #d9f2ff); /* Light blue to white gradient */
 }
 
 .hero {
-    .hero {
-        text-align: center;
-        position: relative;
-        background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
-                    url("images/rafting56_600.jpg");
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: overlay;
-        height: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .hero img {
-        display: none; 
-    }
-    
-    .hero h1 {
-        position: relative;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
-        z-index: 1;
-    }
-    
-}
-
-.history {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-.adventures {
-    padding: 20px;
-}
-
-.adventure-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-}
-
-.adventure-gallery figure {
     text-align: center;
-    margin: 0;
-}
-
-.adventure-gallery img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-footer {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                url("images/rafting.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    height: 0px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: white;
+    border-bottom: 0px solid #1e90ff; /* Adds a water-like bottom border */
 }
 
-footer .social-icons {
-    display: flex;
-    gap: 10px;
+.hero h1, .hero h2, .hero p {
+    color: rgb(26, 26, 31);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.884);
 }
 
-footer .social-icons a img {
-    width: 30px;
+.hero a.cta {
+    background-color: #007acc; /* Deep water blue */
+    color: rgba(24, 20, 20, 0.801);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
 }
+
+.hero a.cta:hover {
+    background-color: #1e90ff; /* Lighter blue on hover */
+}
+
 
