@@ -46,66 +46,48 @@ nav ul li a:hover {
     background: #1e90ff;
 }
 
-.hero {
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/rafting.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 20px;
-}
-
-.hero h1 {
-    font-size: 2.5em;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-}
-
-.hero p {
-    font-size: 1.2em;
-    max-width: 600px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.history, .adventures {
+.trips-intro {
     text-align: center;
     padding: 40px 20px;
+    background: white;
+    border-bottom: 2px solid #007acc;
 }
 
-.history-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.history-content img {
-    width: 300px;
-    border-radius: 10px;
-}
-
-.adventure-gallery {
+.trip-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
-}
-
-.adventure-gallery figure {
     text-align: center;
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.adventure-gallery img {
+.trip {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.trip img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 8px;
+    height: auto;
+    filter: contrast(110%);
+}
+
+.trip h2 {
+    color: #007acc;
+    font-size: 1.5em;
+}
+
+.trip p {
+    font-size: 1em;
+    color: #333;
+}
+
+.trip:hover {
+    transform: scale(1.05);
 }
 
 footer {
@@ -124,6 +106,9 @@ footer {
 .social-icons img:hover {
     transform: scale(1.2);
 }
+
+
+
 
 
 
